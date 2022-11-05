@@ -62,4 +62,8 @@
             return Age;
         }
     }
+    public class Wolf
+    {
+
+    }
 }
