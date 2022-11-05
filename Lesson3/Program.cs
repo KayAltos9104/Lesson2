@@ -64,6 +64,38 @@
     }
     public class Wolf
     {
+        //Поля класса
+        public int Health;
+        public byte Age;
 
+        public Sheep(int health)
+        {
+            Health = health;
+            Age = 0;
+        }
+        public Sheep(int health, byte age)
+        {
+
+            Health = health;
+            Age = age;
+
+        }
+
+        public void Attack(Sheep otherSheep)
+        {
+            otherSheep.Health -= Age;
+        }
+
+        public void Eat()
+        {
+            Health += 10;
+            Console.WriteLine($"Овца покушала. Здоровье: {Health} ");
+        }
+
+        public int IncrementAge(byte incAge)
+        {
+            Age += incAge;
+            return Age;
+        }
     }
 }
