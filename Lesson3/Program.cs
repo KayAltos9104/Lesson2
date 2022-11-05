@@ -68,12 +68,12 @@
         public int Health;
         public byte Age;
 
-        public Sheep(int health)
+        public Wolf(int health)
         {
             Health = health;
             Age = 0;
         }
-        public Sheep(int health, byte age)
+        public Wolf(int health, byte age)
         {
 
             Health = health;
