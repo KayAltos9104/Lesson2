@@ -11,6 +11,7 @@ public abstract class Animal
         Y = y;
         Health = 100;        
     }
+    
     public void Move (int direction)
     {        
         if (direction == 0)
